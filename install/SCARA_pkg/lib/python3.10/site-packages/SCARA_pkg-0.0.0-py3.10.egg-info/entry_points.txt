@@ -1,0 +1,9 @@
+[console_scripts]
+camdetect = SCARA_pkg.camdetect:main
+fkpos = SCARA_pkg.fkpos:main
+ikpos = SCARA_pkg.ikpos:main
+motor_selection = SCARA_pkg.motor_selection:main
+newposition = SCARA_pkg.newposition:main
+position = SCARA_pkg.position:main
+positionradient = SCARA_pkg.positionradient:main
+

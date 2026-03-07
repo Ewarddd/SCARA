@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/SCARA_pkg/SCARA_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/SCARA_pkg/SCARA_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/SCARA_pkg/SCARA_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/SCARA_pkg/SCARA_pkg.egg-info/requires.txt
+writing top-level names to ../../build/SCARA_pkg/SCARA_pkg.egg-info/top_level.txt
+reading manifest file '../../build/SCARA_pkg/SCARA_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/SCARA_pkg/SCARA_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+copying SCARA_pkg/position.py -> /home/reach/SCARA/build/SCARA_pkg/build/lib/SCARA_pkg
+running install
+running install_lib
+copying /home/reach/SCARA/build/SCARA_pkg/build/lib/SCARA_pkg/position.py -> /home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg
+byte-compiling /home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg/position.py to position.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/SCARA_pkg/SCARA_pkg.egg-info to /home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing motor_selection script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg
+Installing position script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg
+writing list of installed files to '/home/reach/SCARA/build/SCARA_pkg/install.log'

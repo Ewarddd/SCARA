@@ -1,0 +1,29 @@
+[0.417s] Invoking command in '/home/reach/SCARA/src/SCARA_pkg': PYTHONPATH=/home/reach/SCARA/build/SCARA_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/SCARA_pkg build --build-base /home/reach/SCARA/build/SCARA_pkg/build install --record /home/reach/SCARA/build/SCARA_pkg/install.log --single-version-externally-managed install_data
+[0.573s] running egg_info
+[0.574s] writing ../../build/SCARA_pkg/SCARA_pkg.egg-info/PKG-INFO
+[0.574s] writing dependency_links to ../../build/SCARA_pkg/SCARA_pkg.egg-info/dependency_links.txt
+[0.574s] writing entry points to ../../build/SCARA_pkg/SCARA_pkg.egg-info/entry_points.txt
+[0.574s] writing requirements to ../../build/SCARA_pkg/SCARA_pkg.egg-info/requires.txt
+[0.574s] writing top-level names to ../../build/SCARA_pkg/SCARA_pkg.egg-info/top_level.txt
+[0.575s] reading manifest file '../../build/SCARA_pkg/SCARA_pkg.egg-info/SOURCES.txt'
+[0.576s] writing manifest file '../../build/SCARA_pkg/SCARA_pkg.egg-info/SOURCES.txt'
+[0.576s] running build
+[0.576s] running build_py
+[0.576s] copying SCARA_pkg/newposition.py -> /home/reach/SCARA/build/SCARA_pkg/build/lib/SCARA_pkg
+[0.576s] running install
+[0.577s] running install_lib
+[0.577s] copying /home/reach/SCARA/build/SCARA_pkg/build/lib/SCARA_pkg/newposition.py -> /home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg
+[0.578s] byte-compiling /home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg/newposition.py to newposition.cpython-310.pyc
+[0.578s] running install_data
+[0.578s] running install_egg_info
+[0.580s] removing '/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.580s] Copying ../../build/SCARA_pkg/SCARA_pkg.egg-info to /home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg-0.0.0-py3.10.egg-info
+[0.581s] running install_scripts
+[0.595s] Installing fkpos script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg
+[0.595s] Installing ikpos script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg
+[0.595s] Installing motor_selection script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg
+[0.595s] Installing newposition script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg
+[0.595s] Installing position script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg
+[0.595s] Installing positionradient script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg
+[0.595s] writing list of installed files to '/home/reach/SCARA/build/SCARA_pkg/install.log'
+[0.613s] Invoked command in '/home/reach/SCARA/src/SCARA_pkg' returned '0': PYTHONPATH=/home/reach/SCARA/build/SCARA_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/SCARA_pkg build --build-base /home/reach/SCARA/build/SCARA_pkg/build install --record /home/reach/SCARA/build/SCARA_pkg/install.log --single-version-externally-managed install_data
