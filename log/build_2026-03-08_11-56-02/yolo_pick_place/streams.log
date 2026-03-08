@@ -1,0 +1,37 @@
+[0.773s] Invoking command in '/home/reach/SCARA/src/yolo_pick_place': PYTHONPATH=/home/reach/SCARA/build/yolo_pick_place/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reach/SCARA/install/yolo_pick_place/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_pick_place build --build-base /home/reach/SCARA/build/yolo_pick_place/build install --record /home/reach/SCARA/build/yolo_pick_place/install.log --single-version-externally-managed install_data
+[0.947s] running egg_info
+[0.948s] creating ../../build/yolo_pick_place/yolo_pick_place.egg-info
+[0.948s] writing ../../build/yolo_pick_place/yolo_pick_place.egg-info/PKG-INFO
+[0.948s] writing dependency_links to ../../build/yolo_pick_place/yolo_pick_place.egg-info/dependency_links.txt
+[0.948s] writing entry points to ../../build/yolo_pick_place/yolo_pick_place.egg-info/entry_points.txt
+[0.948s] writing requirements to ../../build/yolo_pick_place/yolo_pick_place.egg-info/requires.txt
+[0.948s] writing top-level names to ../../build/yolo_pick_place/yolo_pick_place.egg-info/top_level.txt
+[0.948s] writing manifest file '../../build/yolo_pick_place/yolo_pick_place.egg-info/SOURCES.txt'
+[0.949s] reading manifest file '../../build/yolo_pick_place/yolo_pick_place.egg-info/SOURCES.txt'
+[0.950s] writing manifest file '../../build/yolo_pick_place/yolo_pick_place.egg-info/SOURCES.txt'
+[0.950s] running build
+[0.950s] running build_py
+[0.950s] creating /home/reach/SCARA/build/yolo_pick_place/build
+[0.950s] creating /home/reach/SCARA/build/yolo_pick_place/build/lib
+[0.950s] creating /home/reach/SCARA/build/yolo_pick_place/build/lib/yolo_pick_place
+[0.950s] copying yolo_pick_place/__init__.py -> /home/reach/SCARA/build/yolo_pick_place/build/lib/yolo_pick_place
+[0.950s] copying yolo_pick_place/yolotest.py -> /home/reach/SCARA/build/yolo_pick_place/build/lib/yolo_pick_place
+[0.950s] running install
+[0.951s] running install_lib
+[0.951s] creating /home/reach/SCARA/install/yolo_pick_place/lib/python3.10/site-packages/yolo_pick_place
+[0.951s] copying /home/reach/SCARA/build/yolo_pick_place/build/lib/yolo_pick_place/__init__.py -> /home/reach/SCARA/install/yolo_pick_place/lib/python3.10/site-packages/yolo_pick_place
+[0.951s] copying /home/reach/SCARA/build/yolo_pick_place/build/lib/yolo_pick_place/yolotest.py -> /home/reach/SCARA/install/yolo_pick_place/lib/python3.10/site-packages/yolo_pick_place
+[0.952s] byte-compiling /home/reach/SCARA/install/yolo_pick_place/lib/python3.10/site-packages/yolo_pick_place/__init__.py to __init__.cpython-310.pyc
+[0.952s] byte-compiling /home/reach/SCARA/install/yolo_pick_place/lib/python3.10/site-packages/yolo_pick_place/yolotest.py to yolotest.cpython-310.pyc
+[0.952s] running install_data
+[0.952s] creating /home/reach/SCARA/install/yolo_pick_place/share/ament_index
+[0.952s] creating /home/reach/SCARA/install/yolo_pick_place/share/ament_index/resource_index
+[0.952s] creating /home/reach/SCARA/install/yolo_pick_place/share/ament_index/resource_index/packages
+[0.952s] copying resource/yolo_pick_place -> /home/reach/SCARA/install/yolo_pick_place/share/ament_index/resource_index/packages
+[0.952s] copying package.xml -> /home/reach/SCARA/install/yolo_pick_place/share/yolo_pick_place
+[0.952s] running install_egg_info
+[0.954s] Copying ../../build/yolo_pick_place/yolo_pick_place.egg-info to /home/reach/SCARA/install/yolo_pick_place/lib/python3.10/site-packages/yolo_pick_place-0.0.0-py3.10.egg-info
+[0.954s] running install_scripts
+[0.971s] Installing yolotest script to /home/reach/SCARA/install/yolo_pick_place/lib/yolo_pick_place
+[0.971s] writing list of installed files to '/home/reach/SCARA/build/yolo_pick_place/install.log'
+[0.995s] Invoked command in '/home/reach/SCARA/src/yolo_pick_place' returned '0': PYTHONPATH=/home/reach/SCARA/build/yolo_pick_place/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reach/SCARA/install/yolo_pick_place/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_pick_place build --build-base /home/reach/SCARA/build/yolo_pick_place/build install --record /home/reach/SCARA/build/yolo_pick_place/install.log --single-version-externally-managed install_data

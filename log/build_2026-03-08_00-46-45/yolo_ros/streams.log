@@ -1,0 +1,24 @@
+[0.452s] Invoking command in '/home/reach/SCARA/src/yolo_ros/yolo_ros': CMAKE_PREFIX_PATH=/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/yolo_bringup PYTHONPATH=/home/reach/SCARA/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/yolo_ros build --build-base /home/reach/SCARA/build/yolo_ros/build install --record /home/reach/SCARA/build/yolo_ros/install.log --single-version-externally-managed install_data
+[0.616s] running egg_info
+[0.616s] writing ../../../build/yolo_ros/yolo_ros.egg-info/PKG-INFO
+[0.616s] writing dependency_links to ../../../build/yolo_ros/yolo_ros.egg-info/dependency_links.txt
+[0.616s] writing entry points to ../../../build/yolo_ros/yolo_ros.egg-info/entry_points.txt
+[0.616s] writing requirements to ../../../build/yolo_ros/yolo_ros.egg-info/requires.txt
+[0.616s] writing top-level names to ../../../build/yolo_ros/yolo_ros.egg-info/top_level.txt
+[0.618s] reading manifest file '../../../build/yolo_ros/yolo_ros.egg-info/SOURCES.txt'
+[0.618s] writing manifest file '../../../build/yolo_ros/yolo_ros.egg-info/SOURCES.txt'
+[0.618s] running build
+[0.618s] running build_py
+[0.619s] running install
+[0.619s] running install_lib
+[0.620s] running install_data
+[0.620s] running install_egg_info
+[0.621s] removing '/home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros-0.0.0-py3.10.egg-info' (and everything under it)
+[0.621s] Copying ../../../build/yolo_ros/yolo_ros.egg-info to /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros-0.0.0-py3.10.egg-info
+[0.622s] running install_scripts
+[0.636s] Installing debug_node script to /home/reach/SCARA/install/yolo_ros/lib/yolo_ros
+[0.636s] Installing detect_3d_node script to /home/reach/SCARA/install/yolo_ros/lib/yolo_ros
+[0.637s] Installing tracking_node script to /home/reach/SCARA/install/yolo_ros/lib/yolo_ros
+[0.637s] Installing yolo_node script to /home/reach/SCARA/install/yolo_ros/lib/yolo_ros
+[0.637s] writing list of installed files to '/home/reach/SCARA/build/yolo_ros/install.log'
+[0.655s] Invoked command in '/home/reach/SCARA/src/yolo_ros/yolo_ros' returned '0': CMAKE_PREFIX_PATH=/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/yolo_bringup PYTHONPATH=/home/reach/SCARA/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/yolo_ros build --build-base /home/reach/SCARA/build/yolo_ros/build install --record /home/reach/SCARA/build/yolo_ros/install.log --single-version-externally-managed install_data

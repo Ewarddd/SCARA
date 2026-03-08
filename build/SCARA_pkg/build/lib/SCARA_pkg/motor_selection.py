@@ -16,9 +16,8 @@ class ODriveCANNode(Node):
         self.setup_can_interface()
         self.bus = can.interface.Bus(bustype='socketcan', channel='can0', bitrate=1000000)
         # Start a dedicated thread to listen for incoming CAN messages
-        self.listener_thread = threading.Thread(target=self.listen_can_messages, daemon=True)
+        self.listener_thread = threading.Thread(target=self.listen_can_messages,     daemon=True)
         self.listener_thread.start()
-
     def setup_can_interface(self):
         """Ensures the CAN interface (can0) is up."""
         result = subprocess.run(["ip", "link", "show", "can0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)

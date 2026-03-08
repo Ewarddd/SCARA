@@ -1,0 +1,3 @@
+[console_scripts]
+yolotest = yolo_pick_place.yolotest:main
+

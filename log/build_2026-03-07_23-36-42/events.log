@@ -1,0 +1,835 @@
+[0.000000] (-) TimerEvent: {}
+[0.000163] (SCARA_pkg) JobQueued: {'identifier': 'SCARA_pkg', 'dependencies': OrderedDict()}
+[0.000188] (yolo_msgs) JobQueued: {'identifier': 'yolo_msgs', 'dependencies': OrderedDict()}
+[0.000202] (yolo_ros) JobQueued: {'identifier': 'yolo_ros', 'dependencies': OrderedDict([('yolo_msgs', '/home/reach/SCARA/install/yolo_msgs')])}
+[0.000219] (yolo_bringup) JobQueued: {'identifier': 'yolo_bringup', 'dependencies': OrderedDict([('yolo_msgs', '/home/reach/SCARA/install/yolo_msgs'), ('yolo_ros', '/home/reach/SCARA/install/yolo_ros')])}
+[0.000231] (yolo_msgs) JobStarted: {'identifier': 'yolo_msgs'}
+[0.005836] (SCARA_pkg) JobStarted: {'identifier': 'SCARA_pkg'}
+[0.010887] (yolo_msgs) JobProgress: {'identifier': 'yolo_msgs', 'progress': 'cmake'}
+[0.011158] (yolo_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/reach/SCARA/src/yolo_ros/yolo_msgs', '-DCMAKE_INSTALL_PREFIX=/home/reach/SCARA/install/yolo_msgs'], 'cwd': '/home/reach/SCARA/build/yolo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'reach'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/reach'), ('OLDPWD', '/home/reach'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/reach/SCARA/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'reach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'reach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/reach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/reach-Swift-SF314-511:@/tmp/.ICE-unix/1568,unix/reach-Swift-SF314-511:/tmp/.ICE-unix/1568'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/74f3a4e2_7d8d_41ba_94bb_9b569895e92c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WPDXL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a168f553-5891-4078-a788-a84c256c88b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/reach/SCARA/build/yolo_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099474] (-) TimerEvent: {}
+[0.107880] (yolo_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.185536] (yolo_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.192936] (yolo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199589] (-) TimerEvent: {}
+[0.248373] (yolo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.253571] (yolo_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.254662] (yolo_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.255137] (yolo_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.257870] (yolo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299686] (-) TimerEvent: {}
+[0.316563] (yolo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.322032] (yolo_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.322218] (yolo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.322594] (yolo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.327973] (yolo_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399809] (-) TimerEvent: {}
+[0.441081] (yolo_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499918] (-) TimerEvent: {}
+[0.516092] (yolo_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.518992] (yolo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.525254] (yolo_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.553609] (SCARA_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/SCARA_pkg', 'build', '--build-base', '/home/reach/SCARA/build/SCARA_pkg/build', 'install', '--record', '/home/reach/SCARA/build/SCARA_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/reach/SCARA/src/SCARA_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'reach', 'LC_TIME': 'en_GB.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/reach', 'OLDPWD': '/home/reach', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_GB.UTF-8', 'SYSTEMD_EXEC_PID': '1599', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/reach/SCARA/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'reach', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'reach', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/reach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/reach-Swift-SF314-511:@/tmp/.ICE-unix/1568,unix/reach-Swift-SF314-511:/tmp/.ICE-unix/1568', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_GB.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/74f3a4e2_7d8d_41ba_94bb_9b569895e92c', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'en_GB.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WPDXL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.134', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_GB.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:a168f553-5891-4078-a788-a84c256c88b5', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_GB.UTF-8', 'LC_IDENTIFICATION': 'en_GB.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/reach/SCARA/build/SCARA_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/reach/SCARA/build/SCARA_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_GB.UTF-8', 'LC_PAPER': 'en_GB.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.564509] (yolo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.593956] (yolo_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.600006] (-) TimerEvent: {}
+[0.619297] (yolo_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.700138] (-) TimerEvent: {}
+[0.719853] (SCARA_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.720279] (SCARA_pkg) StdoutLine: {'line': b'writing ../../build/SCARA_pkg/SCARA_pkg.egg-info/PKG-INFO\n'}
+[0.720485] (SCARA_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/SCARA_pkg/SCARA_pkg.egg-info/dependency_links.txt\n'}
+[0.720698] (SCARA_pkg) StdoutLine: {'line': b'writing entry points to ../../build/SCARA_pkg/SCARA_pkg.egg-info/entry_points.txt\n'}
+[0.720783] (SCARA_pkg) StdoutLine: {'line': b'writing requirements to ../../build/SCARA_pkg/SCARA_pkg.egg-info/requires.txt\n'}
+[0.720856] (SCARA_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/SCARA_pkg/SCARA_pkg.egg-info/top_level.txt\n'}
+[0.722044] (SCARA_pkg) StdoutLine: {'line': b"reading manifest file '../../build/SCARA_pkg/SCARA_pkg.egg-info/SOURCES.txt'\n"}
+[0.723540] (SCARA_pkg) StdoutLine: {'line': b"writing manifest file '../../build/SCARA_pkg/SCARA_pkg.egg-info/SOURCES.txt'\n"}
+[0.723654] (SCARA_pkg) StdoutLine: {'line': b'running build\n'}
+[0.723698] (SCARA_pkg) StdoutLine: {'line': b'running build_py\n'}
+[0.723977] (SCARA_pkg) StdoutLine: {'line': b'running install\n'}
+[0.724206] (SCARA_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.725167] (SCARA_pkg) StdoutLine: {'line': b'running install_data\n'}
+[0.725381] (SCARA_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.726611] (SCARA_pkg) StdoutLine: {'line': b"removing '/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.728177] (SCARA_pkg) StdoutLine: {'line': b'Copying ../../build/SCARA_pkg/SCARA_pkg.egg-info to /home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages/SCARA_pkg-0.0.0-py3.10.egg-info\n'}
+[0.728812] (SCARA_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.743878] (SCARA_pkg) StdoutLine: {'line': b'Installing camdetect script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg\n'}
+[0.744103] (SCARA_pkg) StdoutLine: {'line': b'Installing fkpos script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg\n'}
+[0.744185] (SCARA_pkg) StdoutLine: {'line': b'Installing ikpos script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg\n'}
+[0.744261] (SCARA_pkg) StdoutLine: {'line': b'Installing motor_selection script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg\n'}
+[0.744368] (SCARA_pkg) StdoutLine: {'line': b'Installing newposition script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg\n'}
+[0.744439] (SCARA_pkg) StdoutLine: {'line': b'Installing position script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg\n'}
+[0.745474] (SCARA_pkg) StdoutLine: {'line': b'Installing positionradient script to /home/reach/SCARA/install/SCARA_pkg/lib/SCARA_pkg\n'}
+[0.747195] (SCARA_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/reach/SCARA/build/SCARA_pkg/install.log'\n"}
+[0.765683] (SCARA_pkg) CommandEnded: {'returncode': 0}
+[0.777610] (SCARA_pkg) JobEnded: {'identifier': 'SCARA_pkg', 'rc': 0}
+[0.800231] (-) TimerEvent: {}
+[0.887448] (yolo_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.900320] (-) TimerEvent: {}
+[1.000540] (-) TimerEvent: {}
+[1.064590] (yolo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.100637] (-) TimerEvent: {}
+[1.200877] (-) TimerEvent: {}
+[1.299171] (yolo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.300952] (-) TimerEvent: {}
+[1.316235] (yolo_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.317684] (yolo_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.339008] (yolo_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.339167] (yolo_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.339217] (yolo_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.339265] (yolo_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.355245] (yolo_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.401052] (-) TimerEvent: {}
+[1.404132] (yolo_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.437965] (yolo_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.446901] (yolo_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/reach/SCARA/build/yolo_msgs\n'}
+[1.451876] (yolo_msgs) CommandEnded: {'returncode': 0}
+[1.452410] (yolo_msgs) JobProgress: {'identifier': 'yolo_msgs', 'progress': 'build'}
+[1.452919] (yolo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/reach/SCARA/build/yolo_msgs', '--', '-j8', '-l8'], 'cwd': '/home/reach/SCARA/build/yolo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'reach'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/reach'), ('OLDPWD', '/home/reach'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/reach/SCARA/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'reach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'reach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/reach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/reach-Swift-SF314-511:@/tmp/.ICE-unix/1568,unix/reach-Swift-SF314-511:/tmp/.ICE-unix/1568'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/74f3a4e2_7d8d_41ba_94bb_9b569895e92c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WPDXL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a168f553-5891-4078-a788-a84c256c88b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/reach/SCARA/build/yolo_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble')]), 'shell': False}
+[1.483278] (yolo_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.491244] (yolo_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.496212] (yolo_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_yolo_msgs\n'}
+[1.501161] (-) TimerEvent: {}
+[1.601423] (-) TimerEvent: {}
+[1.675351] (yolo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.675797] (yolo_msgs) StdoutLine: {'line': b'creating yolo_msgs.egg-info\n'}
+[1.675938] (yolo_msgs) StdoutLine: {'line': b'writing yolo_msgs.egg-info/PKG-INFO\n'}
+[1.676084] (yolo_msgs) StdoutLine: {'line': b'writing dependency_links to yolo_msgs.egg-info/dependency_links.txt\n'}
+[1.676174] (yolo_msgs) StdoutLine: {'line': b'writing top-level names to yolo_msgs.egg-info/top_level.txt\n'}
+[1.676299] (yolo_msgs) StdoutLine: {'line': b"writing manifest file 'yolo_msgs.egg-info/SOURCES.txt'\n"}
+[1.677661] (yolo_msgs) StdoutLine: {'line': b"reading manifest file 'yolo_msgs.egg-info/SOURCES.txt'\n"}
+[1.678725] (yolo_msgs) StdoutLine: {'line': b"writing manifest file 'yolo_msgs.egg-info/SOURCES.txt'\n"}
+[1.699087] (yolo_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_yolo_msgs_egg\n'}
+[1.701502] (-) TimerEvent: {}
+[1.801731] (-) TimerEvent: {}
+[1.901994] (-) TimerEvent: {}
+[2.002257] (-) TimerEvent: {}
+[2.102540] (-) TimerEvent: {}
+[2.202801] (-) TimerEvent: {}
+[2.303074] (-) TimerEvent: {}
+[2.379880] (yolo_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/point2_d__functions.c.o\x1b[0m\n'}
+[2.382405] (yolo_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/vector2__functions.c.o\x1b[0m\n'}
+[2.384102] (yolo_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/pose2_d__functions.c.o\x1b[0m\n'}
+[2.389784] (yolo_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box2_d__functions.c.o\x1b[0m\n'}
+[2.399554] (yolo_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box3_d__functions.c.o\x1b[0m\n'}
+[2.403180] (-) TimerEvent: {}
+[2.403882] (yolo_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/mask__functions.c.o\x1b[0m\n'}
+[2.419613] (yolo_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d__functions.c.o\x1b[0m\n'}
+[2.439012] (yolo_msgs) StdoutLine: {'line': b'[  6%] Built target yolo_msgs__cpp\n'}
+[2.445332] (yolo_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d_array__functions.c.o\x1b[0m\n'}
+[2.445616] (yolo_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d__functions.c.o\x1b[0m\n'}
+[2.445808] (yolo_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d_array__functions.c.o\x1b[0m\n'}
+[2.445964] (yolo_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection__functions.c.o\x1b[0m\n'}
+[2.447278] (yolo_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection_array__functions.c.o\x1b[0m\n'}
+[2.453614] (yolo_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/srv/detail/set_classes__functions.c.o\x1b[0m\n'}
+[2.455830] (yolo_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.477950] (yolo_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.497617] (yolo_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.503340] (-) TimerEvent: {}
+[2.509583] (yolo_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libyolo_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.542459] (yolo_msgs) StdoutLine: {'line': b'[ 14%] Built target yolo_msgs__rosidl_generator_c\n'}
+[2.552761] (yolo_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.552942] (yolo_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.553057] (yolo_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.603434] (-) TimerEvent: {}
+[2.703712] (-) TimerEvent: {}
+[2.803974] (-) TimerEvent: {}
+[2.904226] (-) TimerEvent: {}
+[3.005545] (-) TimerEvent: {}
+[3.051878] (yolo_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.052562] (yolo_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/pose2_d__type_support.cpp.o\x1b[0m\n'}
+[3.053626] (yolo_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/vector2__type_support.cpp.o\x1b[0m\n'}
+[3.106539] (-) TimerEvent: {}
+[3.206896] (-) TimerEvent: {}
+[3.310061] (-) TimerEvent: {}
+[3.373237] (yolo_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[3.380631] (yolo_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/mask__type_support.cpp.o\x1b[0m\n'}
+[3.380825] (yolo_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[3.410224] (-) TimerEvent: {}
+[3.439587] (yolo_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.510320] (-) TimerEvent: {}
+[3.610603] (-) TimerEvent: {}
+[3.665999] (yolo_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.677447] (yolo_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/vector2__type_support.cpp.o\x1b[0m\n'}
+[3.684656] (yolo_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.684884] (yolo_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/pose2_d__type_support.cpp.o\x1b[0m\n'}
+[3.700868] (yolo_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/vector2__type_support.cpp.o\x1b[0m\n'}
+[3.710699] (-) TimerEvent: {}
+[3.712149] (yolo_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/pose2_d__type_support.cpp.o\x1b[0m\n'}
+[3.717901] (yolo_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[3.751946] (yolo_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[3.788979] (yolo_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/mask__type_support.cpp.o\x1b[0m\n'}
+[3.810801] (-) TimerEvent: {}
+[3.823316] (yolo_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.857664] (yolo_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point2_d_array__type_support.cpp.o\x1b[0m\n'}
+[3.892703] (yolo_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point3_d__type_support.cpp.o\x1b[0m\n'}
+[3.905444] (yolo_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point2_d_array__type_support.cpp.o\x1b[0m\n'}
+[3.913560] (-) TimerEvent: {}
+[3.925765] (yolo_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point3_d_array__type_support.cpp.o\x1b[0m\n'}
+[3.961949] (yolo_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[3.982477] (yolo_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[3.997615] (yolo_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[4.009905] (yolo_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o\x1b[0m\n'}
+[4.013665] (-) TimerEvent: {}
+[4.019629] (yolo_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/point2_d__type_support.c.o\x1b[0m\n'}
+[4.029979] (yolo_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/srv/set_classes__type_support.cpp.o\x1b[0m\n'}
+[4.056941] (yolo_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/vector2__type_support.c.o\x1b[0m\n'}
+[4.070768] (yolo_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.086011] (yolo_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/point2_d__type_support_c.cpp.o\x1b[0m\n'}
+[4.094865] (yolo_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/pose2_d__type_support.c.o\x1b[0m\n'}
+[4.114562] (-) TimerEvent: {}
+[4.132309] (yolo_msgs) StdoutLine: {'line': b'[ 42%] Built target yolo_msgs__rosidl_typesupport_c\n'}
+[4.132524] (yolo_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/bounding_box2_d__type_support.c.o\x1b[0m\n'}
+[4.134133] (yolo_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/vector2__type_support_c.cpp.o\x1b[0m\n'}
+[4.141686] (yolo_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[4.148556] (yolo_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/pose2_d__type_support_c.cpp.o\x1b[0m\n'}
+[4.173613] (yolo_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/bounding_box3_d__type_support.c.o\x1b[0m\n'}
+[4.214669] (-) TimerEvent: {}
+[4.215865] (yolo_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/mask__type_support.c.o\x1b[0m\n'}
+[4.261433] (yolo_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point2_d__type_support.c.o\x1b[0m\n'}
+[4.261707] (yolo_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point3_d__type_support.cpp.o\x1b[0m\n'}
+[4.299328] (yolo_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point2_d_array__type_support.c.o\x1b[0m\n'}
+[4.314776] (-) TimerEvent: {}
+[4.340830] (yolo_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point3_d__type_support.c.o\x1b[0m\n'}
+[4.380234] (yolo_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point3_d_array__type_support.c.o\x1b[0m\n'}
+[4.397994] (yolo_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o\x1b[0m\n'}
+[4.415557] (-) TimerEvent: {}
+[4.421470] (yolo_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/detection__type_support.c.o\x1b[0m\n'}
+[4.464199] (yolo_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/detection_array__type_support.c.o\x1b[0m\n'}
+[4.474763] (yolo_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o\x1b[0m\n'}
+[4.490179] (yolo_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o\x1b[0m\n'}
+[4.510524] (yolo_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/srv/detail/set_classes__type_support.c.o\x1b[0m\n'}
+[4.514898] (yolo_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/mask__type_support.cpp.o\x1b[0m\n'}
+[4.515635] (-) TimerEvent: {}
+[4.530124] (yolo_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[4.559589] (yolo_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking C shared library libyolo_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.578760] (yolo_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point3_d_array__type_support.cpp.o\x1b[0m\n'}
+[4.606228] (yolo_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o\x1b[0m\n'}
+[4.615745] (-) TimerEvent: {}
+[4.618199] (yolo_msgs) StdoutLine: {'line': b'[ 59%] Built target yolo_msgs__rosidl_typesupport_introspection_c\n'}
+[4.643293] (yolo_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point2_d__type_support.cpp.o\x1b[0m\n'}
+[4.715855] (-) TimerEvent: {}
+[4.816276] (-) TimerEvent: {}
+[4.827934] (yolo_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[4.885434] (yolo_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point2_d_array__type_support.cpp.o\x1b[0m\n'}
+[4.916384] (-) TimerEvent: {}
+[4.923442] (yolo_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/mask__type_support_c.cpp.o\x1b[0m\n'}
+[4.932574] (yolo_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point2_d__type_support_c.cpp.o\x1b[0m\n'}
+[4.980636] (yolo_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[5.002605] (yolo_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point3_d__type_support.cpp.o\x1b[0m\n'}
+[5.016542] (-) TimerEvent: {}
+[5.030694] (yolo_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o\x1b[0m\n'}
+[5.115257] (yolo_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[5.119562] (-) TimerEvent: {}
+[5.144152] (yolo_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o\x1b[0m\n'}
+[5.219674] (-) TimerEvent: {}
+[5.310586] (yolo_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/srv/set_classes__type_support.cpp.o\x1b[0m\n'}
+[5.310860] (yolo_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o\x1b[0m\n'}
+[5.319777] (-) TimerEvent: {}
+[5.382485] (yolo_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o\x1b[0m\n'}
+[5.416399] (yolo_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point3_d__type_support_c.cpp.o\x1b[0m\n'}
+[5.419882] (-) TimerEvent: {}
+[5.436396] (yolo_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o\x1b[0m\n'}
+[5.441310] (yolo_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o\x1b[0m\n'}
+[5.447318] (yolo_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point3_d_array__type_support.cpp.o\x1b[0m\n'}
+[5.520001] (-) TimerEvent: {}
+[5.610195] (yolo_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.620113] (-) TimerEvent: {}
+[5.651198] (yolo_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/detection__type_support_c.cpp.o\x1b[0m\n'}
+[5.662531] (yolo_msgs) StdoutLine: {'line': b'[ 74%] Built target yolo_msgs__rosidl_typesupport_cpp\n'}
+[5.673109] (yolo_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/detection__type_support.cpp.o\x1b[0m\n'}
+[5.720223] (-) TimerEvent: {}
+[5.767084] (yolo_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[5.792317] (yolo_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o\x1b[0m\n'}
+[5.820328] (-) TimerEvent: {}
+[5.829132] (yolo_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/detection_array__type_support.cpp.o\x1b[0m\n'}
+[5.891926] (yolo_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/srv/detail/set_classes__type_support_c.cpp.o\x1b[0m\n'}
+[5.897561] (yolo_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/srv/detail/set_classes__type_support.cpp.o\x1b[0m\n'}
+[5.920438] (-) TimerEvent: {}
+[5.938382] (yolo_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o\x1b[0m\n'}
+[6.020555] (-) TimerEvent: {}
+[6.062056] (yolo_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o\x1b[0m\n'}
+[6.122952] (-) TimerEvent: {}
+[6.161622] (yolo_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/srv/detail/dds_fastrtps/set_classes__type_support.cpp.o\x1b[0m\n'}
+[6.223069] (-) TimerEvent: {}
+[6.277698] (yolo_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.323188] (-) TimerEvent: {}
+[6.346050] (yolo_msgs) StdoutLine: {'line': b'[ 83%] Built target yolo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[6.423301] (-) TimerEvent: {}
+[6.488711] (yolo_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.523404] (-) TimerEvent: {}
+[6.558154] (yolo_msgs) StdoutLine: {'line': b'[ 84%] Built target yolo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[6.595252] (yolo_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.623563] (-) TimerEvent: {}
+[6.655276] (yolo_msgs) StdoutLine: {'line': b'[ 84%] Built target yolo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[6.670133] (yolo_msgs) StdoutLine: {'line': b'[ 84%] Built target yolo_msgs\n'}
+[6.689657] (yolo_msgs) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.723705] (-) TimerEvent: {}
+[6.823971] (-) TimerEvent: {}
+[6.924220] (-) TimerEvent: {}
+[7.024466] (-) TimerEvent: {}
+[7.124747] (-) TimerEvent: {}
+[7.225009] (-) TimerEvent: {}
+[7.325227] (-) TimerEvent: {}
+[7.425496] (-) TimerEvent: {}
+[7.525719] (-) TimerEvent: {}
+[7.625921] (-) TimerEvent: {}
+[7.726130] (-) TimerEvent: {}
+[7.826338] (-) TimerEvent: {}
+[7.926565] (-) TimerEvent: {}
+[7.957985] (yolo_msgs) StdoutLine: {'line': b'[ 85%] Built target yolo_msgs__py\n'}
+[7.977698] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_vector2_s.c.o\x1b[0m\n'}
+[7.977839] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_bounding_box2_d_s.c.o\x1b[0m\n'}
+[7.977885] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_point2_d_s.c.o\x1b[0m\n'}
+[7.977925] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_pose2_d_s.c.o\x1b[0m\n'}
+[7.977975] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_bounding_box3_d_s.c.o\x1b[0m\n'}
+[7.978047] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_mask_s.c.o\x1b[0m\n'}
+[7.978116] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point2_d_s.c.o\x1b[0m\n'}
+[7.978183] (yolo_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point2_d_array_s.c.o\x1b[0m\n'}
+[8.027559] (-) TimerEvent: {}
+[8.106877] (yolo_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point3_d_s.c.o\x1b[0m\n'}
+[8.107114] (yolo_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point3_d_array_s.c.o\x1b[0m\n'}
+[8.107186] (yolo_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_detection_s.c.o\x1b[0m\n'}
+[8.109123] (yolo_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/srv/_set_classes_s.c.o\x1b[0m\n'}
+[8.109465] (yolo_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_detection_array_s.c.o\x1b[0m\n'}
+[8.127662] (-) TimerEvent: {}
+[8.221268] (yolo_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolo_msgs/libyolo_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[8.227747] (-) TimerEvent: {}
+[8.262235] (yolo_msgs) StdoutLine: {'line': b'[ 96%] Built target yolo_msgs__rosidl_generator_py\n'}
+[8.279845] (yolo_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[8.279996] (yolo_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[8.280052] (yolo_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[8.327862] (-) TimerEvent: {}
+[8.377725] (yolo_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.377898] (yolo_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.377944] (yolo_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.407168] (yolo_msgs) StdoutLine: {'line': b'[100%] Built target yolo_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.407303] (yolo_msgs) StdoutLine: {'line': b'[100%] Built target yolo_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.407348] (yolo_msgs) StdoutLine: {'line': b'[100%] Built target yolo_msgs__rosidl_typesupport_c__pyext\n'}
+[8.416470] (yolo_msgs) CommandEnded: {'returncode': 0}
+[8.417029] (yolo_msgs) JobProgress: {'identifier': 'yolo_msgs', 'progress': 'install'}
+[8.423427] (yolo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/reach/SCARA/build/yolo_msgs'], 'cwd': '/home/reach/SCARA/build/yolo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'reach'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/reach'), ('OLDPWD', '/home/reach'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/reach/SCARA/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'reach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'reach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/reach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/reach-Swift-SF314-511:@/tmp/.ICE-unix/1568,unix/reach-Swift-SF314-511:/tmp/.ICE-unix/1568'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/74f3a4e2_7d8d_41ba_94bb_9b569895e92c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WPDXL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a168f553-5891-4078-a788-a84c256c88b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/reach/SCARA/build/yolo_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble')]), 'shell': False}
+[8.427933] (-) TimerEvent: {}
+[8.430013] (yolo_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.430164] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/ament_index/resource_index/rosidl_interfaces/yolo_msgs\n'}
+[8.430279] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs\n'}
+[8.430366] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv\n'}
+[8.430455] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/set_classes.h\n'}
+[8.430550] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail\n'}
+[8.430629] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__type_support.h\n'}
+[8.430710] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__functions.c\n'}
+[8.430798] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__functions.h\n'}
+[8.430881] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__struct.h\n'}
+[8.430959] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg\n'}
+[8.431042] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.431128] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box3_d.h\n'}
+[8.431218] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/pose2_d.h\n'}
+[8.431304] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/mask.h\n'}
+[8.431388] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box2_d.h\n'}
+[8.431473] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection_array.h\n'}
+[8.431572] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/point2_d.h\n'}
+[8.431658] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d_array.h\n'}
+[8.431743] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d.h\n'}
+[8.431830] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/vector2.h\n'}
+[8.431914] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d.h\n'}
+[8.431999] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail\n'}
+[8.432082] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__type_support.h\n'}
+[8.432166] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__functions.c\n'}
+[8.432250] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__functions.h\n'}
+[8.432327] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__functions.h\n'}
+[8.432408] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__functions.c\n'}
+[8.432488] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__struct.h\n'}
+[8.432570] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__functions.h\n'}
+[8.432666] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__type_support.h\n'}
+[8.432757] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__functions.c\n'}
+[8.432860] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__type_support.h\n'}
+[8.432956] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__functions.c\n'}
+[8.433061] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__type_support.h\n'}
+[8.433162] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__struct.h\n'}
+[8.433229] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__functions.h\n'}
+[8.433296] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__type_support.h\n'}
+[8.433360] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__struct.h\n'}
+[8.433435] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__functions.h\n'}
+[8.433501] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__functions.h\n'}
+[8.433565] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__functions.c\n'}
+[8.433639] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__struct.h\n'}
+[8.433700] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__functions.c\n'}
+[8.433764] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__functions.h\n'}
+[8.433832] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__struct.h\n'}
+[8.433900] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__type_support.h\n'}
+[8.433962] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__functions.c\n'}
+[8.434031] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__functions.c\n'}
+[8.434099] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__struct.h\n'}
+[8.434167] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__struct.h\n'}
+[8.434235] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__functions.h\n'}
+[8.434296] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__struct.h\n'}
+[8.434362] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__functions.h\n'}
+[8.434435] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__functions.c\n'}
+[8.434505] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__type_support.h\n'}
+[8.434578] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__functions.c\n'}
+[8.434648] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__struct.h\n'}
+[8.434719] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__type_support.h\n'}
+[8.434789] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__functions.c\n'}
+[8.434861] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__type_support.h\n'}
+[8.434923] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__type_support.h\n'}
+[8.434987] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__struct.h\n'}
+[8.435056] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__struct.h\n'}
+[8.435126] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__functions.c\n'}
+[8.435195] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__type_support.h\n'}
+[8.435262] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__functions.h\n'}
+[8.435332] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__functions.h\n'}
+[8.435400] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__type_support.h\n'}
+[8.435471] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__struct.h\n'}
+[8.435546] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__functions.h\n'}
+[8.435617] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection.h\n'}
+[8.435687] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d_array.h\n'}
+[8.435800] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/environment/library_path.sh\n'}
+[8.435886] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/environment/library_path.dsv\n'}
+[8.435995] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_c.so\n'}
+[8.436237] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_c.so" to ""\n'}
+[8.436313] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs\n'}
+[8.436353] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv\n'}
+[8.436444] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail\n'}
+[8.436484] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_fastrtps_c.h\n'}
+[8.436531] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg\n'}
+[8.436621] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.436671] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail\n'}
+[8.436707] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[8.436745] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[8.436800] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[8.436858] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[8.436916] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[8.436972] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[8.437024] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[8.437080] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[8.437144] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_c.h\n'}
+[8.437218] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[8.437288] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[8.437358] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_c.h\n'}
+[8.437465] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[8.437700] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.437785] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs\n'}
+[8.437824] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv\n'}
+[8.437862] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail\n'}
+[8.437937] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_introspection_c.h\n'}
+[8.437975] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__type_support.c\n'}
+[8.438066] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg\n'}
+[8.438103] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail\n'}
+[8.438140] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h\n'}
+[8.438216] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_c.h\n'}
+[8.438265] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_c.h\n'}
+[8.438301] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h\n'}
+[8.438366] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__type_support.c\n'}
+[8.438421] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[8.438477] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[8.438546] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_introspection_c.h\n'}
+[8.438612] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_c.h\n'}
+[8.438673] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__type_support.c\n'}
+[8.438759] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__type_support.c\n'}
+[8.438826] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__type_support.c\n'}
+[8.438898] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h\n'}
+[8.438963] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__type_support.c\n'}
+[8.439032] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__type_support.c\n'}
+[8.439101] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_c.h\n'}
+[8.439169] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__type_support.c\n'}
+[8.439239] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_introspection_c.h\n'}
+[8.439311] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__type_support.c\n'}
+[8.439376] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_c.h\n'}
+[8.439449] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__type_support.c\n'}
+[8.439510] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__type_support.c\n'}
+[8.439689] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__type_support.c\n'}
+[8.439760] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__type_support.c\n'}
+[8.439830] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.439926] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_c.so\n'}
+[8.440129] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.440200] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_c.so\n'}
+[8.440352] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_c.so" to ""\n'}
+[8.440432] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs\n'}
+[8.440468] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv\n'}
+[8.440511] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/set_classes.hpp\n'}
+[8.440589] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail\n'}
+[8.440629] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__type_support.hpp\n'}
+[8.440704] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__traits.hpp\n'}
+[8.440740] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__builder.hpp\n'}
+[8.440818] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__struct.hpp\n'}
+[8.440858] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg\n'}
+[8.440922] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d.hpp\n'}
+[8.440959] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/vector2.hpp\n'}
+[8.441012] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d.hpp\n'}
+[8.441066] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box3_d.hpp\n'}
+[8.441122] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d_array.hpp\n'}
+[8.441180] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection.hpp\n'}
+[8.441239] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/mask.hpp\n'}
+[8.441303] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.441358] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail\n'}
+[8.441420] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__struct.hpp\n'}
+[8.441489] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__traits.hpp\n'}
+[8.441562] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__traits.hpp\n'}
+[8.441629] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__builder.hpp\n'}
+[8.441700] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__type_support.hpp\n'}
+[8.441768] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__builder.hpp\n'}
+[8.441835] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__type_support.hpp\n'}
+[8.441902] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__builder.hpp\n'}
+[8.441968] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__type_support.hpp\n'}
+[8.442036] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__type_support.hpp\n'}
+[8.442106] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__type_support.hpp\n'}
+[8.442176] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__traits.hpp\n'}
+[8.442244] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__struct.hpp\n'}
+[8.442312] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__struct.hpp\n'}
+[8.442381] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__type_support.hpp\n'}
+[8.442448] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__traits.hpp\n'}
+[8.442509] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__struct.hpp\n'}
+[8.442586] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__traits.hpp\n'}
+[8.442686] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__type_support.hpp\n'}
+[8.442752] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__traits.hpp\n'}
+[8.442819] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__builder.hpp\n'}
+[8.442886] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__struct.hpp\n'}
+[8.442953] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__struct.hpp\n'}
+[8.443021] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__struct.hpp\n'}
+[8.443093] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__builder.hpp\n'}
+[8.443158] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__type_support.hpp\n'}
+[8.443225] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__struct.hpp\n'}
+[8.443290] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__builder.hpp\n'}
+[8.443356] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__struct.hpp\n'}
+[8.443423] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__builder.hpp\n'}
+[8.443488] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__type_support.hpp\n'}
+[8.443562] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__type_support.hpp\n'}
+[8.443629] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__builder.hpp\n'}
+[8.443696] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__builder.hpp\n'}
+[8.443763] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__traits.hpp\n'}
+[8.443830] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__traits.hpp\n'}
+[8.443899] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__traits.hpp\n'}
+[8.443966] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__type_support.hpp\n'}
+[8.444033] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__builder.hpp\n'}
+[8.444100] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__traits.hpp\n'}
+[8.444167] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__builder.hpp\n'}
+[8.444236] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__type_support.hpp\n'}
+[8.444303] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__struct.hpp\n'}
+[8.444370] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__struct.hpp\n'}
+[8.444441] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__traits.hpp\n'}
+[8.444507] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__traits.hpp\n'}
+[8.444582] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__builder.hpp\n'}
+[8.444650] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__struct.hpp\n'}
+[8.444720] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d_array.hpp\n'}
+[8.444781] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection_array.hpp\n'}
+[8.444845] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box2_d.hpp\n'}
+[8.444913] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/pose2_d.hpp\n'}
+[8.444982] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/point2_d.hpp\n'}
+[8.445076] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs\n'}
+[8.445114] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv\n'}
+[8.445195] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail\n'}
+[8.445231] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/dds_fastrtps\n'}
+[8.445268] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.445342] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg\n'}
+[8.445381] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.445457] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail\n'}
+[8.445498] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.445557] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.445624] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.445684] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.445741] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.445802] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.445866] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/dds_fastrtps\n'}
+[8.445926] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.446009] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.446079] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.446150] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.446216] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.446287] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.446391] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.446720] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.446806] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs\n'}
+[8.446845] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv\n'}
+[8.446883] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail\n'}
+[8.446954] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.446990] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__type_support.cpp\n'}
+[8.447051] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg\n'}
+[8.447128] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail\n'}
+[8.447165] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.447233] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.447304] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__type_support.cpp\n'}
+[8.447373] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__type_support.cpp\n'}
+[8.447443] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__type_support.cpp\n'}
+[8.447507] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.447578] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__type_support.cpp\n'}
+[8.447647] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__type_support.cpp\n'}
+[8.447724] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.447793] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__type_support.cpp\n'}
+[8.447863] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__type_support.cpp\n'}
+[8.447934] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__type_support.cpp\n'}
+[8.448008] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.448080] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.448149] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__type_support.cpp\n'}
+[8.448243] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.448309] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.448377] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__type_support.cpp\n'}
+[8.448446] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.448505] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.448618] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__type_support.cpp\n'}
+[8.448687] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.448754] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__type_support.cpp\n'}
+[8.448821] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.448932] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[8.449266] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.449336] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_cpp.so\n'}
+[8.449508] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[8.449587] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/environment/pythonpath.sh\n'}
+[8.449656] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/environment/pythonpath.dsv\n'}
+[8.449730] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.5.1-py3.10.egg-info\n'}
+[8.449820] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.5.1-py3.10.egg-info/top_level.txt\n'}
+[8.449884] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.5.1-py3.10.egg-info/PKG-INFO\n'}
+[8.449950] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.5.1-py3.10.egg-info/SOURCES.txt\n'}
+[8.450019] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.5.1-py3.10.egg-info/dependency_links.txt\n'}
+[8.450098] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs\n'}
+[8.450167] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.450259] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.450350] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.450447] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/__init__.py\n'}
+[8.450510] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.450596] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.450683] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv\n'}
+[8.450751] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/__init__.py\n'}
+[8.450821] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/_set_classes_s.c\n'}
+[8.450890] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/_set_classes.py\n'}
+[8.450959] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/libyolo_msgs__rosidl_generator_py.so\n'}
+[8.451055] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[8.451149] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg\n'}
+[8.451216] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box2_d_s.c\n'}
+[8.451278] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d_array_s.c\n'}
+[8.451341] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_point2_d_s.c\n'}
+[8.451401] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/__init__.py\n'}
+[8.451467] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_vector2_s.c\n'}
+[8.451538] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_vector2.py\n'}
+[8.451611] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box3_d_s.c\n'}
+[8.451679] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection_array.py\n'}
+[8.451746] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box2_d.py\n'}
+[8.451814] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_pose2_d.py\n'}
+[8.451875] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d.py\n'}
+[8.451943] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_pose2_d_s.c\n'}
+[8.452011] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection.py\n'}
+[8.452085] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_point2_d.py\n'}
+[8.452154] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d_array_s.c\n'}
+[8.452223] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection_s.c\n'}
+[8.452285] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d_s.c\n'}
+[8.452352] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d_array.py\n'}
+[8.452420] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d_array.py\n'}
+[8.452488] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d.py\n'}
+[8.452555] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d_s.c\n'}
+[8.452622] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_mask_s.c\n'}
+[8.452691] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_mask.py\n'}
+[8.452759] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box3_d.py\n'}
+[8.452829] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection_array_s.c\n'}
+[8.486210] (yolo_msgs) StdoutLine: {'line': b"Listing '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs'...\n"}
+[8.486330] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/__init__.py'...\n"}
+[8.486376] (yolo_msgs) StdoutLine: {'line': b"Listing '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg'...\n"}
+[8.486411] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/__init__.py'...\n"}
+[8.486444] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box2_d.py'...\n"}
+[8.486475] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box3_d.py'...\n"}
+[8.486515] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection.py'...\n"}
+[8.486565] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection_array.py'...\n"}
+[8.486602] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d.py'...\n"}
+[8.486634] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d_array.py'...\n"}
+[8.486668] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d.py'...\n"}
+[8.486700] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d_array.py'...\n"}
+[8.486732] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_mask.py'...\n"}
+[8.486764] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_point2_d.py'...\n"}
+[8.486795] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_pose2_d.py'...\n"}
+[8.486827] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_vector2.py'...\n"}
+[8.486858] (yolo_msgs) StdoutLine: {'line': b"Listing '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv'...\n"}
+[8.486889] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/__init__.py'...\n"}
+[8.486921] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/_set_classes.py'...\n"}
+[8.489613] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.489832] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.489945] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.490102] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.490209] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.490413] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.490500] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_py.so\n'}
+[8.490661] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/reach/SCARA/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_py.so" to ""\n'}
+[8.490753] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Point2D.idl\n'}
+[8.490834] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Vector2.idl\n'}
+[8.490873] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Pose2D.idl\n'}
+[8.490938] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox2D.idl\n'}
+[8.491007] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox3D.idl\n'}
+[8.491075] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Mask.idl\n'}
+[8.491144] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2D.idl\n'}
+[8.491213] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2DArray.idl\n'}
+[8.491250] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3D.idl\n'}
+[8.491317] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3DArray.idl\n'}
+[8.491385] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Detection.idl\n'}
+[8.491453] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/DetectionArray.idl\n'}
+[8.491524] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/srv/SetClasses.idl\n'}
+[8.491594] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Point2D.msg\n'}
+[8.491670] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Vector2.msg\n'}
+[8.491739] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Pose2D.msg\n'}
+[8.491806] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox2D.msg\n'}
+[8.491865] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox3D.msg\n'}
+[8.491916] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Mask.msg\n'}
+[8.491966] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2D.msg\n'}
+[8.492016] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2DArray.msg\n'}
+[8.492089] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3D.msg\n'}
+[8.492152] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3DArray.msg\n'}
+[8.492217] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/Detection.msg\n'}
+[8.492282] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/msg/DetectionArray.msg\n'}
+[8.492347] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/srv/SetClasses.srv\n'}
+[8.492413] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/srv/SetClasses_Request.msg\n'}
+[8.492498] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/srv/SetClasses_Response.msg\n'}
+[8.492592] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/ament_index/resource_index/package_run_dependencies/yolo_msgs\n'}
+[8.492683] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/ament_index/resource_index/parent_prefix_path/yolo_msgs\n'}
+[8.492758] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/environment/ament_prefix_path.sh\n'}
+[8.492845] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/environment/ament_prefix_path.dsv\n'}
+[8.492914] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/environment/path.sh\n'}
+[8.492982] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/environment/path.dsv\n'}
+[8.493048] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/local_setup.bash\n'}
+[8.493084] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/local_setup.sh\n'}
+[8.493150] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/local_setup.zsh\n'}
+[8.493208] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/local_setup.dsv\n'}
+[8.493286] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/package.dsv\n'}
+[8.493361] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/ament_index/resource_index/packages/yolo_msgs\n'}
+[8.493451] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cExport.cmake\n'}
+[8.493516] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.493612] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.493714] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.493790] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.493873] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.493951] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cExport.cmake\n'}
+[8.494029] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.494102] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cppExport.cmake\n'}
+[8.494191] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.494266] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.494360] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.494440] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.494518] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[8.494583] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.494668] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_pyExport.cmake\n'}
+[8.494742] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.494815] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[8.494884] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.494964] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.495042] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.495121] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.495195] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.495269] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.495356] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgsConfig.cmake\n'}
+[8.495426] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgsConfig-version.cmake\n'}
+[8.495496] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_msgs/share/yolo_msgs/package.xml\n'}
+[8.497175] (yolo_msgs) CommandEnded: {'returncode': 0}
+[8.507533] (yolo_msgs) JobEnded: {'identifier': 'yolo_msgs', 'rc': 0}
+[8.507935] (yolo_ros) JobStarted: {'identifier': 'yolo_ros'}
+[8.528050] (-) TimerEvent: {}
+[8.628304] (-) TimerEvent: {}
+[8.728520] (-) TimerEvent: {}
+[8.828766] (-) TimerEvent: {}
+[8.929031] (-) TimerEvent: {}
+[8.932549] (yolo_ros) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/yolo_ros', 'build', '--build-base', '/home/reach/SCARA/build/yolo_ros/build', 'install', '--record', '/home/reach/SCARA/build/yolo_ros/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/reach/SCARA/src/yolo_ros/yolo_ros', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'reach', 'LC_TIME': 'en_GB.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/reach/SCARA/install/yolo_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/reach', 'OLDPWD': '/home/reach', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_GB.UTF-8', 'SYSTEMD_EXEC_PID': '1599', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/reach/SCARA/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'reach', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'reach', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/reach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/reach-Swift-SF314-511:@/tmp/.ICE-unix/1568,unix/reach-Swift-SF314-511:/tmp/.ICE-unix/1568', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_GB.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/74f3a4e2_7d8d_41ba_94bb_9b569895e92c', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'en_GB.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WPDXL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.134', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_GB.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:a168f553-5891-4078-a788-a84c256c88b5', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_GB.UTF-8', 'LC_IDENTIFICATION': 'en_GB.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/reach/SCARA/build/yolo_ros', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/reach/SCARA/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages:/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages:/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_GB.UTF-8', 'LC_PAPER': 'en_GB.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/reach/SCARA/install/yolo_msgs'}, 'shell': False}
+[9.029128] (-) TimerEvent: {}
+[9.093277] (yolo_ros) StdoutLine: {'line': b'running egg_info\n'}
+[9.093626] (yolo_ros) StdoutLine: {'line': b'creating ../../../build/yolo_ros/yolo_ros.egg-info\n'}
+[9.093779] (yolo_ros) StdoutLine: {'line': b'writing ../../../build/yolo_ros/yolo_ros.egg-info/PKG-INFO\n'}
+[9.093931] (yolo_ros) StdoutLine: {'line': b'writing dependency_links to ../../../build/yolo_ros/yolo_ros.egg-info/dependency_links.txt\n'}
+[9.094027] (yolo_ros) StdoutLine: {'line': b'writing entry points to ../../../build/yolo_ros/yolo_ros.egg-info/entry_points.txt\n'}
+[9.094095] (yolo_ros) StdoutLine: {'line': b'writing requirements to ../../../build/yolo_ros/yolo_ros.egg-info/requires.txt\n'}
+[9.094239] (yolo_ros) StdoutLine: {'line': b'writing top-level names to ../../../build/yolo_ros/yolo_ros.egg-info/top_level.txt\n'}
+[9.094312] (yolo_ros) StdoutLine: {'line': b"writing manifest file '../../../build/yolo_ros/yolo_ros.egg-info/SOURCES.txt'\n"}
+[9.095489] (yolo_ros) StdoutLine: {'line': b"reading manifest file '../../../build/yolo_ros/yolo_ros.egg-info/SOURCES.txt'\n"}
+[9.095992] (yolo_ros) StdoutLine: {'line': b"writing manifest file '../../../build/yolo_ros/yolo_ros.egg-info/SOURCES.txt'\n"}
+[9.096064] (yolo_ros) StdoutLine: {'line': b'running build\n'}
+[9.096101] (yolo_ros) StdoutLine: {'line': b'running build_py\n'}
+[9.096181] (yolo_ros) StdoutLine: {'line': b'creating /home/reach/SCARA/build/yolo_ros/build\n'}
+[9.096260] (yolo_ros) StdoutLine: {'line': b'creating /home/reach/SCARA/build/yolo_ros/build/lib\n'}
+[9.096301] (yolo_ros) StdoutLine: {'line': b'creating /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros\n'}
+[9.096380] (yolo_ros) StdoutLine: {'line': b'copying yolo_ros/debug_node.py -> /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros\n'}
+[9.096922] (yolo_ros) StdoutLine: {'line': b'copying yolo_ros/yolo_node.py -> /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros\n'}
+[9.097265] (yolo_ros) StdoutLine: {'line': b'copying yolo_ros/__init__.py -> /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros\n'}
+[9.097334] (yolo_ros) StdoutLine: {'line': b'copying yolo_ros/tracking_node.py -> /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros\n'}
+[9.097510] (yolo_ros) StdoutLine: {'line': b'copying yolo_ros/detect_3d_node.py -> /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros\n'}
+[9.097689] (yolo_ros) StdoutLine: {'line': b'running install\n'}
+[9.097924] (yolo_ros) StdoutLine: {'line': b'running install_lib\n'}
+[9.098499] (yolo_ros) StdoutLine: {'line': b'creating /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros\n'}
+[9.098568] (yolo_ros) StdoutLine: {'line': b'copying /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros/debug_node.py -> /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros\n'}
+[9.098643] (yolo_ros) StdoutLine: {'line': b'copying /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros/yolo_node.py -> /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros\n'}
+[9.098714] (yolo_ros) StdoutLine: {'line': b'copying /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros/__init__.py -> /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros\n'}
+[9.098784] (yolo_ros) StdoutLine: {'line': b'copying /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros/tracking_node.py -> /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros\n'}
+[9.098855] (yolo_ros) StdoutLine: {'line': b'copying /home/reach/SCARA/build/yolo_ros/build/lib/yolo_ros/detect_3d_node.py -> /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros\n'}
+[9.099224] (yolo_ros) StdoutLine: {'line': b'byte-compiling /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros/debug_node.py to debug_node.cpython-310.pyc\n'}
+[9.101091] (yolo_ros) StdoutLine: {'line': b'byte-compiling /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros/yolo_node.py to yolo_node.cpython-310.pyc\n'}
+[9.102651] (yolo_ros) StdoutLine: {'line': b'byte-compiling /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros/__init__.py to __init__.cpython-310.pyc\n'}
+[9.102847] (yolo_ros) StdoutLine: {'line': b'byte-compiling /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros/tracking_node.py to tracking_node.cpython-310.pyc\n'}
+[9.103540] (yolo_ros) StdoutLine: {'line': b'byte-compiling /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros/detect_3d_node.py to detect_3d_node.cpython-310.pyc\n'}
+[9.107305] (yolo_ros) StdoutLine: {'line': b'running install_data\n'}
+[9.107413] (yolo_ros) StdoutLine: {'line': b'creating /home/reach/SCARA/install/yolo_ros/share/ament_index\n'}
+[9.107485] (yolo_ros) StdoutLine: {'line': b'creating /home/reach/SCARA/install/yolo_ros/share/ament_index/resource_index\n'}
+[9.107533] (yolo_ros) StdoutLine: {'line': b'creating /home/reach/SCARA/install/yolo_ros/share/ament_index/resource_index/packages\n'}
+[9.107572] (yolo_ros) StdoutLine: {'line': b'copying resource/yolo_ros -> /home/reach/SCARA/install/yolo_ros/share/ament_index/resource_index/packages\n'}
+[9.107611] (yolo_ros) StdoutLine: {'line': b'copying package.xml -> /home/reach/SCARA/install/yolo_ros/share/yolo_ros\n'}
+[9.107671] (yolo_ros) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.108877] (yolo_ros) StdoutLine: {'line': b'Copying ../../../build/yolo_ros/yolo_ros.egg-info to /home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages/yolo_ros-0.0.0-py3.10.egg-info\n'}
+[9.109320] (yolo_ros) StdoutLine: {'line': b'running install_scripts\n'}
+[9.122925] (yolo_ros) StdoutLine: {'line': b'Installing debug_node script to /home/reach/SCARA/install/yolo_ros/lib/yolo_ros\n'}
+[9.123059] (yolo_ros) StdoutLine: {'line': b'Installing detect_3d_node script to /home/reach/SCARA/install/yolo_ros/lib/yolo_ros\n'}
+[9.123140] (yolo_ros) StdoutLine: {'line': b'Installing tracking_node script to /home/reach/SCARA/install/yolo_ros/lib/yolo_ros\n'}
+[9.123179] (yolo_ros) StdoutLine: {'line': b'Installing yolo_node script to /home/reach/SCARA/install/yolo_ros/lib/yolo_ros\n'}
+[9.123279] (yolo_ros) StdoutLine: {'line': b"writing list of installed files to '/home/reach/SCARA/build/yolo_ros/install.log'\n"}
+[9.129211] (-) TimerEvent: {}
+[9.140752] (yolo_ros) CommandEnded: {'returncode': 0}
+[9.145272] (yolo_ros) JobEnded: {'identifier': 'yolo_ros', 'rc': 0}
+[9.145694] (yolo_bringup) JobStarted: {'identifier': 'yolo_bringup'}
+[9.151046] (yolo_bringup) JobProgress: {'identifier': 'yolo_bringup', 'progress': 'cmake'}
+[9.151630] (yolo_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/reach/SCARA/src/yolo_ros/yolo_bringup', '-DCMAKE_INSTALL_PREFIX=/home/reach/SCARA/install/yolo_bringup'], 'cwd': '/home/reach/SCARA/build/yolo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'reach'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/reach/SCARA/install/yolo_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/reach'), ('OLDPWD', '/home/reach'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/reach/SCARA/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'reach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'reach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/reach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/reach-Swift-SF314-511:@/tmp/.ICE-unix/1568,unix/reach-Swift-SF314-511:/tmp/.ICE-unix/1568'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/74f3a4e2_7d8d_41ba_94bb_9b569895e92c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WPDXL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/reach/SCARA/install/yolo_ros:/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a168f553-5891-4078-a788-a84c256c88b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/reach/SCARA/build/yolo_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages:/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages:/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble')]), 'shell': False}
+[9.196992] (yolo_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[9.229321] (-) TimerEvent: {}
+[9.243964] (yolo_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[9.249227] (yolo_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[9.314796] (yolo_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[9.321020] (yolo_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[9.321326] (yolo_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[9.321807] (yolo_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[9.324859] (yolo_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.329386] (-) TimerEvent: {}
+[9.387277] (yolo_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.392517] (yolo_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.392706] (yolo_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.392981] (yolo_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.394543] (yolo_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[9.429517] (-) TimerEvent: {}
+[9.506096] (yolo_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[9.529659] (-) TimerEvent: {}
+[9.611898] (yolo_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.613297] (yolo_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[9.614376] (yolo_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/reach/SCARA/build/yolo_bringup\n'}
+[9.617315] (yolo_bringup) CommandEnded: {'returncode': 0}
+[9.617736] (yolo_bringup) JobProgress: {'identifier': 'yolo_bringup', 'progress': 'build'}
+[9.617905] (yolo_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/reach/SCARA/build/yolo_bringup', '--', '-j8', '-l8'], 'cwd': '/home/reach/SCARA/build/yolo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'reach'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/reach/SCARA/install/yolo_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/reach'), ('OLDPWD', '/home/reach'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/reach/SCARA/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'reach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'reach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/reach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/reach-Swift-SF314-511:@/tmp/.ICE-unix/1568,unix/reach-Swift-SF314-511:/tmp/.ICE-unix/1568'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/74f3a4e2_7d8d_41ba_94bb_9b569895e92c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WPDXL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/reach/SCARA/install/yolo_ros:/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a168f553-5891-4078-a788-a84c256c88b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/reach/SCARA/build/yolo_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages:/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages:/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble')]), 'shell': False}
+[9.629755] (-) TimerEvent: {}
+[9.646620] (yolo_bringup) CommandEnded: {'returncode': 0}
+[9.647145] (yolo_bringup) JobProgress: {'identifier': 'yolo_bringup', 'progress': 'install'}
+[9.647285] (yolo_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/reach/SCARA/build/yolo_bringup'], 'cwd': '/home/reach/SCARA/build/yolo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'reach'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/reach/SCARA/install/yolo_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/reach'), ('OLDPWD', '/home/reach'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '1599'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/reach/SCARA/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'reach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'reach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/reach/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/reach-Swift-SF314-511:@/tmp/.ICE-unix/1568,unix/reach-Swift-SF314-511:/tmp/.ICE-unix/1568'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/74f3a4e2_7d8d_41ba_94bb_9b569895e92c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WPDXL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/reach/SCARA/install/yolo_ros:/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a168f553-5891-4078-a788-a84c256c88b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/reach/SCARA/build/yolo_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/reach/SCARA/install/yolo_ros/lib/python3.10/site-packages:/home/reach/SCARA/install/yolo_msgs/local/lib/python3.10/dist-packages:/home/reach/SCARA/install/SCARA_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/reach/SCARA/install/yolo_msgs:/home/reach/SCARA/install/SCARA_pkg:/opt/ros/humble')]), 'shell': False}
+[9.653798] (yolo_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.653968] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch\n'}
+[9.655366] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolov5.launch.py\n'}
+[9.655597] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolov9.launch.py\n'}
+[9.655767] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolov10.launch.py\n'}
+[9.655927] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolov8.launch.py\n'}
+[9.656087] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yoloe.launch.py\n'}
+[9.656246] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolo-world.launch.py\n'}
+[9.656416] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolo.launch.py\n'}
+[9.656652] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolov12.launch.py\n'}
+[9.656819] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolov26.launch.py\n'}
+[9.657081] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup//launch/yolov11.launch.py\n'}
+[9.657324] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/ament_index/resource_index/package_run_dependencies/yolo_bringup\n'}
+[9.657481] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/ament_index/resource_index/parent_prefix_path/yolo_bringup\n'}
+[9.657635] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/environment/ament_prefix_path.sh\n'}
+[9.657756] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/environment/ament_prefix_path.dsv\n'}
+[9.657864] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/environment/path.sh\n'}
+[9.657972] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/environment/path.dsv\n'}
+[9.658083] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/local_setup.bash\n'}
+[9.658195] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/local_setup.sh\n'}
+[9.658306] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/local_setup.zsh\n'}
+[9.658413] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/local_setup.dsv\n'}
+[9.658522] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/package.dsv\n'}
+[9.658677] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/ament_index/resource_index/packages/yolo_bringup\n'}
+[9.658811] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/cmake/yolo_bringupConfig.cmake\n'}
+[9.658905] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/cmake/yolo_bringupConfig-version.cmake\n'}
+[9.659006] (yolo_bringup) StdoutLine: {'line': b'-- Installing: /home/reach/SCARA/install/yolo_bringup/share/yolo_bringup/package.xml\n'}
+[9.660461] (yolo_bringup) CommandEnded: {'returncode': 0}
+[9.668546] (yolo_bringup) JobEnded: {'identifier': 'yolo_bringup', 'rc': 0}
+[9.668998] (-) EventReactorShutdown: {}
