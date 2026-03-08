@@ -8,6 +8,7 @@ setup.py
 ../../build/yolo_pick_place/yolo_pick_place.egg-info/requires.txt
 ../../build/yolo_pick_place/yolo_pick_place.egg-info/top_level.txt
 ../../build/yolo_pick_place/yolo_pick_place.egg-info/zip-safe
+launch/camera_yolo.launch.py
 resource/yolo_pick_place
 test/test_copyright.py
 test/test_flake8.py
